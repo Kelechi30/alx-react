@@ -1,8 +1,10 @@
+const path = require("path");
+
 entry: {
   main: path.resolve(__dirname, "./js/dashboard_main.js");
 }
 output: {
-  filename: "[name].bundle.js";
+  filename: "bundle.js";
   path: path.resolve(__dirname, "public");
 }
 module.exports = {
