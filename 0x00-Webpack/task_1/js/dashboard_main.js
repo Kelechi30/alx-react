@@ -8,11 +8,12 @@ const _ = require("lodash");
   <p>Copyright - Holberton School</p>
 </>;
 
-function  updateCounter() {
+function updateCounter() {
   counter++;
-  $('#count').html(`${counter} clicks on the button`);
+  $("#count").html(`${counter} clicks on the button`);
 }
 
-$("button").on("click", _.debounce(updateCounter, 500));updateCounter() {
-
+$("button").on("click", _.debounce(updateCounter, 500));
+updateCounter();
+{
 }
