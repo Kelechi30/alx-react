@@ -4,17 +4,18 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import Notifications from "./Notifications";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <Notifications />
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
-/*ReactDOM.render(
+const rootNotifications = ReactDOM.createRoot(
+  document.getElementById("root-notifications")
+);
+rootNotifications.render(
   <React.StrictMode>
     <Notifications />
-  </React.StrictMode>,
-  document.getElementById("root-notifications")
-);*/
+  </React.StrictMode>
+);

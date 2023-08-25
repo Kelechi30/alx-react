@@ -1,7 +1,7 @@
 import React from "react";
-import "./notification.css";
+import "./Notifications.css";
 
-export function returnDiv() {
+export default function Notifications() {
   return (
     <div className="notifications">
       <p>Here is the list of notifications</p>

@@ -14,7 +14,7 @@ function App() {
         <p>Login to access the full dashboard</p>
       </body>
       <footer className="app-footer">
-        Copyright {getFullYear} - {getFooterCopy}
+        Copyright {getFullYear()} - {getFooterCopy()}
       </footer>
     </div>
   );
